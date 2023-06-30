@@ -43,10 +43,15 @@
 
 a:visited,
 a:hover,
-a:active #logo-container-hyperlink:visited,
+a:active,
+a:-webkit-any-link,
+#logo-container-hyperlink:visited,
 #logo-container-hyperlink:hover,
-#logo-container-hyperlink:active {
-  color: inherit;
+#logo-container-hyperlink:active,
+#social-logo-hyperlink:visited,
+#social-logo-hyperlink:hover,
+#social-logo-hyperlink:active {
+  color: black;
 }
 
 .logo-text {
@@ -326,7 +331,7 @@ a {
 .project-card {
   width: 90%;
   height: 550px;
-  background-image: url(./images/projects/Project1.png);
+  /* background-image: url(./images/projects/Project1.png); */
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -463,13 +468,83 @@ a {
   background-image: url(./images/projects/Project2.png);
 }
 
-#project3 {
-  background-image: url(./images/projects/Project3.png);
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 100px;
+  padding: 3rem 1rem;
 }
 
-#project4 {
-  margin-left: 120px;
-  background-image: url(./images/projects/Project4.png);
+.social-logo-box {
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+}
+.social-logo {
+  width: 82px;
+}
+
+.social-logo-text {
+  margin: 8px 0;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.social-logo-box:hover {
+  transition: all 0.5s;
+  font-weight: 800;
+  font-size: 18px;
+  transform: scale(1.065);
+  color: rgb(42, 110, 228);
+}
+
+.resume-section {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  width: 80%;
+}
+
+.resume-cloud-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.resume-download-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(206, 201, 201);
+  font-size: 30px;
+  font-weight: 900;
+  border: 2px solid rgb(174, 172, 172);
+  border-radius: 4px;
+  width: 210px;
+  height: 80px;
+}
+
+.resume-download-text:hover {
+  background-color: rgb(246, 240, 240);
+}
+
+.inner-resume-download-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume-download-text:hover .inner-resume-download-text {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  color: #e84949;
 }
 
 @media (max-width: 1300px) {
