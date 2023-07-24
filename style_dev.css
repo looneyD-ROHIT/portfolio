@@ -468,6 +468,11 @@ a {
   background-image: url(./images/projects/Project2.png);
 }
 
+#project3 {
+  margin-left: 120px;
+  background-image: url(./images/projects/Project3.png);
+}
+
 .social-container {
   display: flex;
   flex-direction: row;
