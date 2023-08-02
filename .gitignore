@@ -1,0 +1,6 @@
+node_modules
+*.zip
+portfolio-website second
+.vscode
+index_dev.html
+style_dev.css
